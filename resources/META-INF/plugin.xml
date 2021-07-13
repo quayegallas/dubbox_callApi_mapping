@@ -1,0 +1,34 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>dubbox_callapi_mapping</name>
+  <version>1.0</version>
+  <vendor email="darkquaylegallas@outlook.com" url="">Refrain</vendor>
+
+  <description><![CDATA[
+    Happy CalApi,Happy Life!
+    全新的跳转callApi为你而打造！加班不幸苦，幸苦的是查代码！
+  ]]></description>
+
+  <change-notes><![CDATA[
+     V1.0 你就当初始化了
+  ]]></change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="callapimapping" class="CallApiMapping" text="callApi" description="callApi">
+      <add-to-group group-id="FindMenuGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
